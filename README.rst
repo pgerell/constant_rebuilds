@@ -11,3 +11,4 @@ How to reproduce:
 #. Build solution
 #. Build solution one more time.
 
+When performing the same steps using ``generate-vs17.bat``, the second build doesn't do anything.
