@@ -78,7 +78,7 @@ ExternalProject_Add(external_boost
     BUILD_IN_SOURCE 1
     CONFIGURE_COMMAND ${XBOOST_CONFIGURE_ARGS}
     BUILD_COMMAND ${XBOOST_BUILD_ARGS} 
-    INSTALL_COMMAND ${CMAKE_COMMAND} -E echo "Skipping cmake external project install step."
+    INSTALL_COMMAND ${CMAKE_COMMAND} -E touch "${CMAKE_BINARY_DIR}/CMakeFiles/external_boost"
 )
 
 # Set up different variables that would have been setup by find_package, and
